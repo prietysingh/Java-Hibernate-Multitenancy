@@ -17,10 +17,6 @@ public class DataSourceMultiTenantConnectionProviderImpl extends AbstractDataSou
 
 	@Autowired
 	private Map<String, ComboPooledDataSource> dataSources;
-	
-	@Autowired
-	private MultiTenantJpaConfiguration config;
-
 
 	@Override
 	protected DataSource selectAnyDataSource() {

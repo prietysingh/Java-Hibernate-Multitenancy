@@ -2,6 +2,8 @@
 
 Spring Boot application to allow multi tenant application to access multiple databases using hibernate and C3P0. This allows user to specify pooling in a multi tenant application. This has been achieved using ComboPooledDataSource.
 
+Add the base package for your project as a dependency in applicationContext.xml
+
 ### Requirements ###
 
 * Java 7+

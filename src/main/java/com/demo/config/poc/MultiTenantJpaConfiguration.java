@@ -30,9 +30,8 @@ import com.mt.model.Actor;
 
 @Configuration
 @EnableConfigurationProperties({ MultiTenantProperties.class, JpaProperties.class })
-//@ImportResource(locations = { "classpath:applicationContent.xml" }) 
+@ImportResource(locations = { "classpath:applicationContent.xml" }) 
 @EnableJpaRepositories
-//@EnableJpaRepositories(basePackages = { "com.mt.dao" }, transactionManagerRef = "txManager")
 @EnableTransactionManagement
 public class MultiTenantJpaConfiguration {
 
